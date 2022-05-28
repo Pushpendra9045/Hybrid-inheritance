@@ -1,0 +1,36 @@
+// Program to understand the concept of hybrid inheritance 
+
+#include<iostream>
+using namespace std;
+// fisrt base class
+class Vegetable{
+    public:
+    Vegetable()
+    {
+        cout<<"This is Vegetable "<<endl;
+    }
+};
+// second base class 
+class Market{
+    public:
+    Market()
+    {
+        cout<<"Vegetable sell in market "<<endl;
+    }
+};
+// first sub class
+class brinjal : public Vegetable{
+    
+};
+// second sub-class
+class raddish : public Vegetable,public Market{
+    
+};
+// main function
+int main()
+{
+    // Creating object of sub class will
+    // invoke the constructor of base class.
+    raddish obj2;
+    return 0;
+}
